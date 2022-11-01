@@ -2,11 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Open Sans', sans-serif;
 
+}
+/* font is space mono 300 */
+
+/* dark smoke bg url = https://media4.giphy.com/media/RI42LtoMA5mxi/giphy.gif?cid=ecf05e4708s3v0otbcb7m61w7lwn0fa2g19y3dkullkqnl85&rid=giphy.gif&ct=g */
 
 body {
-    background-image: url("https://media4.giphy.com/media/RI42LtoMA5mxi/giphy.gif?cid=ecf05e4708s3v0otbcb7m61w7lwn0fa2g19y3dkullkqnl85&rid=giphy.gif&ct=g"); 
+    background-image: url("https://media3.giphy.com/media/mYsyUjpYH9cPsVPJfV/giphy.gif?cid=ecf05e47pplnh7h1sp8afd6hygse0lucegbd8bhxvmdds32y&rid=giphy.gif&ct=g"); 
     background-color: #cccccc; 
     width: 100vw;
     height: 100vh; 
