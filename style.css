@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("https://media4.giphy.com/media/RI42LtoMA5mxi/giphy.gif?cid=ecf05e4708s3v0otbcb7m61w7lwn0fa2g19y3dkullkqnl85&rid=giphy.gif&ct=g"); 
+    background-color: #cccccc; 
+    width: 100vw;
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: repeat; 
+    background-size: cover; 
+}
+
