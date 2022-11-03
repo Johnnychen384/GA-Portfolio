@@ -17,5 +17,115 @@ body {
     background-position: center; 
     background-repeat: repeat; 
     background-size: cover; 
+    position: relative;
 }
 
+
+
+
+/* ======================Nav stuff=============================================== */
+nav {
+    width: 100%;
+    height: 6%;
+    background-color: black;
+    opacity: .5;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar {
+    height: 2em;
+    width: 1.5em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: .1em;
+    margin: 1em .15em;
+}
+
+nav h1 {
+    padding: .3em 0 0 .3em;
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: white;
+    opacity: .8;
+    display: none;
+    position: absolute;
+    top: 2.8em;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul li {
+    margin: .2em 0 0 .1em;
+    color: black;
+}
+
+nav ul li:first-child {
+    padding-top: .2em;
+}
+
+nav ul li:last-child{
+    padding-bottom: .5em;
+}
+
+
+
+
+/* ======================Nav stuff=============================================== */
+
+/* =======================homepage text && socials=============================== */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main h1 {
+    font-size: 1.1em;
+    width: 80%;
+    margin: 14em auto .5em auto;
+    color: white;
+    text-align: center;
+}
+
+main h4 {
+    font-size: .65em;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    /* display: none; */
+}
+
+#social-container {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 1em 0 0 0;
+    opacity: 0;
+    /* display: none; */
+}
+
+
+#social-container li {
+    padding-right: .6em;
+    cursor: pointer;
+}
+
+#social-container li a:hover {
+    color: white;
+    transform: scale(2);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
