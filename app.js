@@ -66,8 +66,84 @@ $(() => {
         
     }
 
-
+    // listens for click and if its the Skills details button showDetails func
     $('body').on('click', (e) => {
         showDetails(e)
     })
+
+
+//===================================== About Me js stuff =================================================
+//=========================================================================================================
+
+
+//===================================== My Favorite Projects js stuff =================================================
+//=========================================================================================================
+
+    let indexOfImg = 0
+    const amountOfImg = $('.carousel-container').children().length - 1
+    
+    // increment indexOfImg to change img
+    const changeNextImg = () => {
+        $('.carousel-container').children().eq(indexOfImg).hide()
+        indexOfImg >= amountOfImg ? indexOfImg = 0 : indexOfImg++
+        $('.carousel-container').children().eq(indexOfImg).show()
+    }
+
+    // decrement indexOfImg to change img
+    const changePrevImg = () => {
+        $('.carousel-container').children().eq(indexOfImg).hide()
+        indexOfImg > 0 ? indexOfImg-- : indexOfImg = amountOfImg
+        $('.carousel-container').children().eq(indexOfImg).show()
+
+    }
+
+    $('#next-btn').on('click', changeNextImg)
+    $('#prev-btn').on('click', changePrevImg)
+
+    // auto change image
+    $(() => {
+        setInterval(changeNextImg, 2500)
+    })
+
+
+//===================================== My Favorite Projects js stuff =================================================
+//=========================================================================================================
+
+//===================================== Projects js stuff =================================================
+//=========================================================================================================
+
+    // condition to prevent more than 1 popup image from being created
+    let openedImg = false
+
+    // function that creates a new div with the image we clicked "zoomed in"
+    const expandImg = (e) => {
+        const target = $(e.target)
+
+        if(target.attr('class') === 'project-image' && !openedImg){
+            const imageDiv = $('<div>').addClass('expanded-div')
+            const image = $('<img>').attr('src', target.attr('src'))
+            const closeBtn = $('<button>').attr('id', 'close-btn').text('Close')
+            imageDiv.append(image, closeBtn)
+            $('body').append(imageDiv)
+
+            openedImg = true
+        }
+    }
+
+    // listens for click and calls the expandImg function and passes the element that triggered this.
+    $('body').on('click', (e) => {
+        const target = $(e.target)
+        expandImg(e)
+
+        // when the close button is clicked in the expanded img div remove it.
+        if(target.attr('id') === 'close-btn'){
+            $('.expanded-div').remove()
+            openedImg = false
+        }
+    })
+
+
+    
+
 })
+
