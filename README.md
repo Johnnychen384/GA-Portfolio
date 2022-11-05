@@ -24,5 +24,5 @@ https://johnnychen384.github.io/GA-Portfolio/index.html
 1. Could not make cards even in the About me page because of the dropdown text.
 
 
-#WARNING
-1. !!!! Site has background music, so before going to link please lower volume!!!!
+# WARNING
+!!!! Site has background music, so before going to link please lower volume!!!!
