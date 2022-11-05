@@ -381,6 +381,10 @@ h3 {
     .bio-section {
         margin-bottom: 25em;
     }
+
+    #up-btn {
+        width: 4%;
+    }
 }
 
 @media (min-width:1680px) {
@@ -438,7 +442,6 @@ h3 {
     h3 {
         font-size: 1.7em;
     }
-
 
     .bio-section img {
         width: 22%;

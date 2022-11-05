@@ -416,6 +416,10 @@ h3 {
     .project-title {
         font-size: 1.1em;
     }
+
+    #up-btn {
+        width: 4%;
+    }
 }
 
 @media (min-width:1680px) {
@@ -474,4 +478,5 @@ h3 {
     #close-btn {
         font-size: 1.4em;
     }
+
 }
