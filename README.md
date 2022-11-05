@@ -25,4 +25,4 @@ https://johnnychen384.github.io/GA-Portfolio/index.html
 
 
 #WARNING
-!!!! Site has background music, so before going to link please lower volume!!!!
+1. !!!! Site has background music, so before going to link please lower volume!!!!
