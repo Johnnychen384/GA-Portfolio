@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat; 
     background-size: cover; 
     position: relative;
+    overflow: scroll;
 }
 
 
@@ -54,7 +55,7 @@ nav h1 {
 }
 
 nav ul {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     list-style-type: none;
     background-color: white;
@@ -98,6 +99,18 @@ nav ul li:last-child{
 #up-btn:hover{
     transform: scale(1.2);
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
 
 /* ======================Nav stuff=============================================== */
 
@@ -147,7 +160,8 @@ h3 {
     justify-content: center;
     align-items: center;
     opacity: .9;
-    overflow: scroll;
+    /* overflow: scroll; */
+    flex-wrap: wrap;
 }
 
 .skill-card img {
@@ -175,4 +189,263 @@ h3 {
 
 .skill-card p {
     display: none;
+}
+
+/* =======================My Skills sections=============================== */
+
+/* =======================Media Queries=============================== */
+
+@media (min-width: 481px){
+    body{
+        background-color: black;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav h1 {
+        display: flex;
+        color: white;
+        margin-left: .5em;
+        margin-top: 0;
+        padding-top: 0;
+        text-decoration: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    nav ul li {
+        margin-right: 2.5em;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul li:first-child {
+        padding-top: 0;
+    }
+    
+    nav ul li:last-child{
+        padding-bottom: 0;
+    }
+
+    /* unrelated to nav */
+    .skill-flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+    }
+
+
+    .skill-card {
+        width: 30%;
+        height: 40%;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    body{
+        
+        overflow: scroll;
+    }
+
+    nav {
+        height: 7em;
+    }
+
+    nav h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        font-size: 1.5em;
+    }
+
+    /* unrelated nav stuff */
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .bio-section img {
+        width: 30%;
+    }
+
+    .bio-section p {
+        font-size: 1.2em;
+    }
+
+    .skill-card {
+        width: 40%;
+        height: 20%;
+    }
+}
+
+@media (min-width: 826px) {
+    .bio-section {
+        margin-bottom: 10em;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        overflow: scroll;
+    }
+
+    nav {
+        height: 5em;
+    }
+
+    nav h1 {
+        font-size: 1.7em;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+    }
+
+    /* unrelated nav stuff */
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .bio-section {
+        margin-bottom: 11em;
+    }
+
+    .bio-section img {
+        width: 25%;
+    }
+
+    .bio-section p {
+        font-size: 1em;
+    }
+    
+
+    .skill-flex {
+        justify-content: center;
+        align-items: center;
+        gap: 1em 1em;
+    }
+
+    .skill-card {
+        width: 20%;
+        height: 30%;
+        
+    }
+}
+
+@media (min-width: 1099px) {
+    .bio-section {
+        margin-bottom: 15em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bio-section {
+        margin-bottom: 20em;
+    }
+
+    .skill-flex{
+        padding-bottom: 2em;
+    }
+}
+
+@media (min-width: 1538px) {
+    .bio-section {
+        margin-bottom: 25em;
+    }
+}
+
+@media (min-width:1680px) {
+    nav {
+        height: 6em;
+    }
+
+    nav h1 {
+        font-size: 2.2em;
+    }
+
+    nav ul li {
+        font-size: 1.6em;
+    }
+
+    /* unrelated nav stuff */
+
+    h1{
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .bio-section {
+        margin-bottom: 25em;
+    }
+
+    .skill-card {
+        width: 25%;
+        height: 30%;
+    }
+
+    .skill-title {
+        font-size: 1.4em;
+    }
+
+    .skill-details {
+        font-size: 1.2em;
+    }
+
+    #up-btn {
+        width: 4%;
+    }
+}
+
+@media (min-width: 1858px) {
+    .bio-section {
+        margin-bottom: 30em;
+    }
+}
+
+@media (min-width: 1920px) {
+    h3 {
+        font-size: 1.7em;
+    }
+
+
+    .bio-section img {
+        width: 22%;
+    }
+
+    .bio-section p{
+        font-size: 1.5em;
+    }
+
 }

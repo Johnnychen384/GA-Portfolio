@@ -54,7 +54,7 @@ nav h1 {
 }
 
 nav ul {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     list-style-type: none;
     background-color: white;
@@ -97,6 +97,18 @@ nav ul li:last-child{
 #up-btn:hover{
     transform: scale(1.2);
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
 
 /* ======================Nav stuff=============================================== */
 
@@ -155,6 +167,13 @@ h3 {
 
 /* =======================Projects section=============================== */
 
+.project-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-card {
     background-color: white;
     margin: 1em auto;
@@ -167,6 +186,10 @@ h3 {
     align-items: center;
     opacity: .8;
     overflow: scroll;
+}
+
+.project-card:hover {
+    transform: scale(1.2);
 }
 
 .project-card img {
@@ -219,4 +242,236 @@ h3 {
 #close-btn:hover {
     transform: scale(1.2);
     color: blue;
+}
+
+
+/* =======================Media Queries=============================== */
+
+@media (min-width: 481px){
+    #nav-bar {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav h1 {
+        display: flex;
+        color: white;
+        margin-left: .5em;
+        margin-top: 0;
+        padding-top: 0;
+        text-decoration: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    nav ul li {
+        margin-right: 2.5em;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul li:first-child {
+        padding-top: 0;
+    }
+    
+    nav ul li:last-child{
+        padding-bottom: 0;
+    }
+
+    /* unrelated to nav */
+
+    .expanded-div {
+        height: 20%;
+    }
+
+
+}
+
+@media (min-width: 750px) {
+    .expanded-div {
+        height: 23%;
+    }
+}
+
+
+@media (min-width: 769px) {
+    body{
+        
+        overflow: scroll;
+    }
+
+    nav {
+        height: 7em;
+    }
+
+    nav h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        font-size: 1.5em;
+    }
+
+    /* unrelated nav stuff */
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    .project-title {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        overflow: scroll;
+    }
+
+    nav {
+        height: 5em;
+    }
+
+    nav h1 {
+        font-size: 1.7em;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+    }
+
+    /* unrelated nav stuff */
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-top: 4em;
+    }
+
+    .favoriteContainer button{
+        width: 15%;
+    }
+
+    .carousel-container img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .project-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        width: 30%;
+    }
+
+    .project-title {
+        font-size: .9em;
+    }
+
+    .expanded-div {
+        height: 27%;
+        width: 71%;
+        left: 15%;
+    }
+
+    .expanded-div img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .project-flex {
+        margin-bottom: 2em;
+    }
+
+    .expanded-div {
+        height: 29%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .project-title {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width:1680px) {
+    nav {
+        height: 6em;
+    }
+
+    nav h1 {
+        font-size: 2.2em;
+    }
+
+    nav ul li {
+        font-size: 1.6em;
+    }
+
+    /* unrelated nav stuff */
+
+    h1{
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    #up-btn {
+        width: 4%;
+    }
+
+    .project-title {
+        font-size: 1.2em;
+    }
+
+    .expanded-div {
+        height: 30%;
+    }
+
+    #close-btn {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1920px) {
+    h3 {
+        font-size: 1.7em;
+    }
+
+    .project-title {
+        font-size: 1.4em;
+    }
+
+    .expanded-div {
+        height: 32%;
+    }
+
+    #close-btn {
+        font-size: 1.4em;
+    }
 }

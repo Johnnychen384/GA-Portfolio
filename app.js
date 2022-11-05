@@ -86,14 +86,14 @@ $(() => {
     const changeNextImg = () => {
         $('.carousel-container').children().eq(indexOfImg).hide()
         indexOfImg >= amountOfImg ? indexOfImg = 0 : indexOfImg++
-        $('.carousel-container').children().eq(indexOfImg).show()
+        $('.carousel-container').children().eq(indexOfImg).css('display', 'flex')
     }
 
     // decrement indexOfImg to change img
     const changePrevImg = () => {
         $('.carousel-container').children().eq(indexOfImg).hide()
         indexOfImg > 0 ? indexOfImg-- : indexOfImg = amountOfImg
-        $('.carousel-container').children().eq(indexOfImg).show()
+        $('.carousel-container').children().eq(indexOfImg).css('display', 'flex')
 
     }
 
